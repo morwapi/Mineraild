@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "minerailed",
+  "version": "1.0.0",
+  "name": "Minerailed",
+  "description": "Unrailed-like game mode for Minecraft using vanilla minecarts",
+  "authors": [
+    "Minerailed Team"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "MIT",
+  "icon": "assets/minerailed/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.minerailed.MinerailedMod"
+    ],
+    "client": [
+      "com.minerailed.client.MinerailedClient"
+    ]
+  },
+  "mixins": [
+    "minerailed.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {}
+}
